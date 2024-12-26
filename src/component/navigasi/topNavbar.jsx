@@ -8,11 +8,11 @@ export default function TopNavbar({ handleOpen }) {
           <FaBars />
         </div>
         <div class="flex-shrink-0">
-          <img src="logo.png" alt="Panbil Logo" class="w-10 h-auto" />
+          <img src="/assets/icons/Logo-Panbil-Corporate.png" alt="Panbil Logo" className="w-20 lg:w-32 h-auto" />
         </div>
         <div class="lg:flex space-x-4 hidden">
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <IoIosLogOut />
+          <button class="p-2 bg-red-600 rounded-full hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-center items-center">
+            <IoIosLogOut className="text-white size-5"/>
           </button>
         </div>
       </div>

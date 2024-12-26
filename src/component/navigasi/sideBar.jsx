@@ -20,20 +20,12 @@ export default function SideBar({ open, handleOpen }) {
       to: "/divisi",
     },
     {
-      name: "Jabatan",
-      to: "/divisi",
-    },
-    {
       name: "Unit Usaha",
-      to: "/divisi",
+      to: "/unitusaha",
     },
     {
       name: "Cetak Pengajuan",
-      to: "/divisi",
-    },
-    {
-      name: "Pengaturan",
-      to: "/divisi",
+      to: "/cetakpengajuan",
     },
   ];
   return (
@@ -42,7 +34,21 @@ export default function SideBar({ open, handleOpen }) {
         open ? "w-full md:w-1/3" : "w-0"
       } transition-all duration-300 ease-in-out fixed top-0 left-0 h-full lg:w-64 bg-white text-black shadow-md z-40`}
     >
-      <ul className={`${open ? "block" : "hidden"} lg:block mt-16 space-y-2`}>
+      <ul className={`${open ? "block" : "hidden"} lg:block mt-16`}>
+        <li>
+          <Link
+            to={"/profile"}
+            onClick={handleOpen}
+            className={`px-4 py-2 hover:bg-red-600 hover:text-white flex items-center gap-4 ${
+              isActive("/profile") ? "text-white bg-red-600" : ""
+            }`}
+          >
+            <div className="size-10 bg-blue-400 rounded-full">
+
+            </div>
+            Profile
+          </Link>
+        </li>
         {route.map((item, index) => (
           <li key={index}>
             <Link

@@ -1,76 +1,30 @@
-export default function FormAddDivisi(){
-    return(
-        <div className="mt-5 bg-white rounded-sm shadow-md p-2">
-            <form className="w-full">
-            <label htmlFor="" className="font-bold text-[18px]">
-              Text
-            </label>
-            <div className="w-2/3 border nunito mt-2 ">
-              <input
-                className="w-full px-4 py-3"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-[18px]">
-              Text
-            </label>
-            <div className="w-2/3 border nunito mt-2 ">
-              <input
-                className="w-full px-4 py-3"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-[18px]">
-              Text
-            </label>
-            <div className="w-2/3 border nunito mt-2 ">
-              <input
-                className="w-full px-4 py-3"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-[18px]">
-              Text
-            </label>
-            <div className="w-2/3 border nunito mt-2 ">
-              <input
-                className="w-full px-4 py-3"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-[18px]">
-              Text
-            </label>
-            <div className="w-2/3 border nunito mt-2 ">
-              <input
-                className="w-full px-4 py-3"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <div className="w-full flex justify-end gap-3">
-              <button
-                className="bg-[rgb(16,185,129)] py-3 px-14 rounded-xl mt-5 nunito text-white  "
-                type="submit"
-              >
-                Simpan
-              </button>
-              <button
-                className=" bg-red-500 py-3 px-14 rounded-xl mt-5 nunito text-white  "
-              >
-                Batal
-              </button>
-            </div>
-          </form>
+export default function FormAddDivisi() {
+  return (
+    <div className="mt-5 bg-white rounded-sm shadow-md p-2">
+      <form className="w-full">
+        <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
+          Nama Divisi
+        </label>
+        <div className="w-2/3 border mt-2">
+          <input
+            className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
+            type="text"
+            name="text"
+            placeholder="Masukkan Nama Divisi"
+          />
         </div>
-    )
+        <div className="w-full flex justify-end gap-3">
+          <button
+            className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base"
+            type="submit"
+          >
+            Simpan
+          </button>
+          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base">
+            Batal
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 }

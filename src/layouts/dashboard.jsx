@@ -12,8 +12,7 @@ export default function LayoutDashboard() {
         <TopNavbar handleOpen={handleOpen}/>
         <div className="mt-16 flex">
           <SideBar open={open} handleOpen={handleOpen}/>
-          <div className="lg:ml-64 flex-1 py-4 px-2 overflow-hidden">
-            {/* Konten utama */}
+          <div className="lg:ml-64 flex-1 py-4 px-2 md:px-4 overflow-hidden">
             <Outlet />
           </div>
         </div>

@@ -1,60 +1,38 @@
-export default function FormAddKaryawan(){
+export default function FormAddUnitUsaha(){
     return(
         <div className="mt-5 bg-white rounded-sm shadow-md p-2">
             <form className="w-full">
             <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
-              Text
+              Nama Unit Usaha
             </label>
             <div className="w-2/3 border mt-2">
               <input
                 className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
                 type="text"
-                name="text"
-                placeholder="Masukkan text"
+                name="namaunitusaha"
+                placeholder="Masukkan Nama Unit Usaha"
               />
             </div>
             <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
-              Text
+              Alamat
             </label>
             <div className="w-2/3 border mt-2">
               <input
                 className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
                 type="text"
-                name="text"
-                placeholder="Masukkan text"
+                name="alamat"
+                placeholder="Masukkan Alamat"
               />
             </div>
             <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
-              Text
+              Nomor Telepon
             </label>
             <div className="w-2/3 border mt-2">
               <input
                 className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
-              Text
-            </label>
-            <div className="w-2/3 border mt-2">
-              <input
-                className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
-              />
-            </div>
-            <label htmlFor="" className="font-bold text-sm md:text-base lg:text-lg">
-              Text
-            </label>
-            <div className="w-2/3 border mt-2">
-              <input
-                className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
-                type="text"
-                name="text"
-                placeholder="Masukkan text"
+                type="number"
+                name="notelp"
+                placeholder="Masukkan Nomor Telepon"
               />
             </div>
             <div className="w-full flex justify-end gap-3">

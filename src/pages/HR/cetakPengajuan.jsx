@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function Karyawan() {
+export default function CetakPengajuan() {
   return (
     <div className="max-w-full min-h-screen lg:p-6 p-2 md:p-4">
-      <h1 className="lg:text-3xl text-lg md:text-xl font-bold">Kelola Data Karyawan</h1>
-      <div className="mt-5">
-        <Link
-          to={"/addkaryawan"}
-          className="p-2 bg-blue-600 rounded-md text-white font-semibold text-xs lg:text-base"
-        >
-          Tambah Karyawan
-        </Link>
-      </div>
-
+      <h1 className="lg:text-3xl text-lg md:text-xl font-bold">Daftar Pengajuan</h1>
       <div className="overflow-x-auto mt-9 w-full">
         <table className="table-auto min-w-[550px] w-full border-collapse border border-gray-300">
           <thead>
