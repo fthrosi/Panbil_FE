@@ -9,7 +9,7 @@ export default function FormAddKaryawan(){
               <input
                 className="w-full px-2 py-1 text-xs md:text-sm lg:text-base"
                 type="text"
-                name="text"
+                name="nama"
                 placeholder="Masukkan text"
               />
             </div>
