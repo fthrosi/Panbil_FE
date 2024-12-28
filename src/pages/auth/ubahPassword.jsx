@@ -1,7 +1,7 @@
 export default function UbahPassword({handlePass}) {
   return (
-    <div className="min-h-screen w-full flex justify-center items-center fixed px-2 bg-[rgba(0,0,0,0.5)] z-50">
-      <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md text-center">
+    <div className="min-h-screen w-full fixed inset-0 flex justify-center items-center px-2 bg-[rgba(0,0,0,0.5)] z-50">
+      <div class="bg-white p-8 rounded-lg shadow-md text-center">
         <form class="space-y-4">
           <input
             type="password"

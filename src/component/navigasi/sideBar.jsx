@@ -24,6 +24,10 @@ export default function SideBar({ open, handleOpen }) {
       to: "/unitusaha",
     },
     {
+      name: "Pengajuan Cuti",
+      to: "/pengajuan",
+    },
+    {
       name: "Cetak Pengajuan",
       to: "/cetakpengajuan",
     },

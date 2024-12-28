@@ -10,9 +10,9 @@ export default function LayoutDashboard() {
     return (
       <div className="min-h-screen">
         <TopNavbar handleOpen={handleOpen}/>
-        <div className="mt-16 flex">
+        <div className="pt-16 flex">
           <SideBar open={open} handleOpen={handleOpen}/>
-          <div className="lg:ml-64 flex-1 py-4 px-2 md:px-4 overflow-hidden">
+          <div className="flex-1 overflow-hidden">
             <Outlet />
           </div>
         </div>

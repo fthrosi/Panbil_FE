@@ -19,7 +19,9 @@ import CetakPengajuan from './pages/HR/cetakPengajuan';
 import Profile from './pages/profile';
 import Password from './pages/auth/password';
 import UbahPassword from './pages/auth/ubahPassword';
-
+import PengajuanCuti from './pages/karyawan/pengajuanCuti';
+import PengajuanIzin from './pages/karyawan/pengajuanIzin';
+import Pengajuan from './pages/karyawan/pengajuan';
 
 function App() {
   return (
@@ -40,6 +42,9 @@ function App() {
             <Route path="/unitusaha" element={<UnitUsaha />} />
             <Route path="/addunitusaha" element={<AddUnitUsaha />} />
             <Route path="/cetakpengajuan" element={<CetakPengajuan />} />
+            <Route path="/pengajuan" element={<Pengajuan />} />
+            <Route path="/pengajuancuti" element={<PengajuanCuti />} />
+            <Route path="/pengajuanizin" element={<PengajuanIzin />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>
