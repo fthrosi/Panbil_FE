@@ -7,25 +7,20 @@ export default function DashboardHr() {
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <div className="flex gap-x-4 gap-y-4 mt-10">
           <Link
-            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 "
+            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-500 hover:text-white"
             to={"/karyawan"}
           >
             Karyawan
           </Link>
-          <Link to={"/divisi"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2">
+          <Link to={"/divisi"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-500 hover:text-white">
             Divisi
           </Link>
         </div>
         <div className="flex gap-x-4 gap-y-4 mt-4">
-          <Link to={"/unitusaha"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2">
-            Unit Usaha
-          </Link>
-          <Link to={"/pengajuan"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2">
+          <Link to={"/pengajuan"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-500 hover:text-white">
             Pengajuan
           </Link>
-        </div>
-        <div className="flex gap-x-4 gap-y-4 mt-4">
-          <Link to={"/cetakpengajuan"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2">
+          <Link to={"/cetakpengajuan"} className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-500 hover:text-white">
             Cetak Pengajuan
           </Link>
         </div>
