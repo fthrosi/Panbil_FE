@@ -8,7 +8,7 @@ export const addKaryawan = async (formData) => {
       if (error.response) {
         if (error.response.status === 422) {
           // Error validasi
-          const errorMessages = Object.values(error.response.data.errors)
+          const errorMessages = Object.values(error.response.data.message)
             .flat()
             .join(', ');
           throw new Error(errorMessages);
@@ -48,7 +48,7 @@ export const addKaryawan = async (formData) => {
       if (error.response) {
         if (error.response.status === 422) {
           // Error validasi
-          const errorMessages = Object.values(error.response.data.errors)
+          const errorMessages = Object.values(error.response.data.message)
             .flat()
             .join(', ');
           throw new Error(errorMessages);

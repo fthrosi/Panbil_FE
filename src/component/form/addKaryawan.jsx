@@ -40,6 +40,7 @@ export default function FormAddKaryawan() {
         navigate('/karyawan');
     }, 500);
     } catch (error) {
+      console.log(error)
       toast.error(error.message);
     }
   };
