@@ -198,7 +198,7 @@ export default function FormPengajuanCuti() {
           >
             Simpan
           </button>
-          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base  hover:bg-red-200" onClick={() => navigate('/pengajuan')}>
+          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base  hover:bg-red-200" onClick={() => navigate('/pengajuan')} type="button">
             Batal
           </button>
         </div>
