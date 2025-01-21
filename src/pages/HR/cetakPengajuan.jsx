@@ -364,7 +364,7 @@ export default function CetakPengajuan() {
                         {item.status}
                       </td>
                       <td className=" px-4 py-2 flex justify-center gap-4">
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => handlePrint('cuti', item)}>
+                        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-200" onClick={() => handlePrint('cuti', item)}>
                           Cetak
                         </button>
                       </td>
@@ -450,7 +450,7 @@ export default function CetakPengajuan() {
                         {item.status}
                       </td>
                       <td className=" px-4 py-2 flex justify-center gap-4">
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => handlePrint('izin', item)}>
+                        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-200" onClick={() => handlePrint('izin', item)}>
                           Cetak
                         </button>
                       </td>

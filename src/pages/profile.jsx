@@ -123,11 +123,11 @@ export default function Profile() {
           <div className="flex">
             <div className="flex justify-start items-center lg:gap-10 gap-5">
               <div
-                className="lg:size-40 size-20 bg-blue-500 rounded-full"
+                className="lg:size-40 size-20 bg-blue-500 rounded-full cursor-pointer"
                 onClick={() => document.getElementById("profil").click()}
               >
                 <img
-                  className="w-full h-full rounded-full "
+                  className="w-full h-full rounded-full"
                   src={
                     data.Foto ? getPhoto(data.Foto) : "/assets/images/5856.jpg"
                   }
@@ -176,13 +176,13 @@ export default function Profile() {
           </div>
           <div className="w-full flex justify-end gap-3">
             <button
-              className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base"
+              className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base hover:bg-green-300"
               onClick={() => handleOpen(data)}
             >
               Edit Profile
             </button>
             <button
-              className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base"
+              className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base  hover:bg-green-300"
               onClick={handlePass}
             >
               Ubah Password

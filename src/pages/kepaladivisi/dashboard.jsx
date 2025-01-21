@@ -126,7 +126,7 @@ export default function DashboardKd() {
         <div className="mt-5">
           <Link
             to={"/daftarpengajuan"}
-            className="text-white bg-gray-700 p-3 rounded-md shadow-lg font-semibold"
+            className="text-white bg-gray-700 p-3 rounded-md shadow-lg font-semibold hover:bg-red-500"
           >
             Daftar Pengajuan
           </Link>
@@ -138,7 +138,7 @@ export default function DashboardKd() {
                 {head.map((item) => (
                   <th
                     key={item.key}
-                    className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50 bg-gray-500"
+                    className="border border-gray-300 px-4 py-2 cursor-pointer bg-gray-500"
                     onClick={() =>
                       item.key !== "action" && requestSortMain(item.key)
                     }

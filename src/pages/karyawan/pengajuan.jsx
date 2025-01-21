@@ -269,14 +269,14 @@ export default function Pengajuan() {
         <h1 className="text-3xl font-bold">Pengajuan</h1>
         <div className="flex gap-x-4 gap-y-4 mt-10">
           <Link
-            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 "
+            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-200"
             to={"/pengajuancuti"}
           >
             Cuti
           </Link>
           <Link
             to={"/pengajuanizin"}
-            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2"
+            className="font-semibold w-1/2 flex justify-center items-center bg-white h-20 border border-gray-300 rounded-lg shadow-md text-xs sm:text-base md:text-lg p-2 hover:bg-red-200"
           >
             Izin
           </Link>

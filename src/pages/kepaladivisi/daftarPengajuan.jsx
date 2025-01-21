@@ -289,7 +289,7 @@ const DaftarPengajuan = () => {
                 {head.map((item) => (
                   <th
                     key={item.key}
-                    className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50 bg-gray-500"
+                    className="border border-gray-300 px-4 py-2 cursor-pointer bg-gray-500"
                     onClick={() =>
                       item.key !== "action" && requestSortMain(item.key)
                     }
@@ -341,7 +341,7 @@ const DaftarPengajuan = () => {
                   </td>
                   <td className="px-4 py-2 flex justify-center gap-x-4 ">
                     <button
-                      className="bg-blue-500 text-white px-4 py-2 rounded"
+                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300"
                       onClick={() => {
                         setFormData({
                           status: "Accepted",
@@ -352,7 +352,7 @@ const DaftarPengajuan = () => {
                       Accept
                     </button>
                     <button
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-300"
                       onClick={() => {
                         handleTutup(item.id);
                       }}
@@ -380,7 +380,7 @@ const DaftarPengajuan = () => {
                 {headIzin.map((item) => (
                   <th
                     key={item.key}
-                    className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50 bg-gray-500"
+                    className="border border-gray-300 px-4 py-2 cursor-pointer  bg-gray-500"
                     onClick={() => requestSortIzin(item.key)}
                   >
                     <div className="flex items-center justify-center gap-1">
@@ -432,7 +432,7 @@ const DaftarPengajuan = () => {
                   </td>
                   <td className=" px-4 py-2 flex justify-center gap-4">
                     <button
-                      className="bg-blue-500 text-white px-4 py-2 rounded"
+                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300"
                       onClick={() => {
                         setFormData({
                           status: "Accepted",
@@ -443,7 +443,7 @@ const DaftarPengajuan = () => {
                       Accept
                     </button>
                     <button
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-300"
                       onClick={() => {
                         handleTutup(item.id);
                       }}

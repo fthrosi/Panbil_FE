@@ -302,14 +302,14 @@ export default function Karyawan() {
           <div className="mt-5">
             <Link
               to={"/addkaryawan"}
-              className="p-2 bg-blue-600 rounded-md text-white font-semibold text-xs lg:text-base"
+              className="p-2 bg-blue-600 rounded-md text-white font-semibold text-xs lg:text-base hover:bg-blue-300"
             >
               Tambah Karyawan
             </Link>
           </div>
           <div className="mt-5">
             <Link
-              className="p-2 bg-red-500 rounded-md text-white font-semibold text-xs lg:text-base"
+              className="p-2 bg-red-500 rounded-md text-white font-semibold text-xs lg:text-base hover:bg-red-300"
               onClick={() => openModal("Kuota Cuti", handleCuti)}
             >
               Reset Kuota Cuti
@@ -317,7 +317,7 @@ export default function Karyawan() {
           </div>
           <div className="mt-5">
             <Link
-              className="p-2 bg-red-500 rounded-md text-white font-semibold text-xs lg:text-base"
+              className="p-2 bg-red-500 rounded-md text-white font-semibold text-xs lg:text-base hover:bg-red-300"
               onClick={() => openModal("Kuota Izin", handleIzin)}
             >
               Reset Kuota Izin
@@ -339,7 +339,7 @@ export default function Karyawan() {
                     {head.map((item) => (
                       <th
                         key={item.key}
-                        className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50"
+                        className="border border-gray-300 px-4 py-2 cursor-pointer bg-gray-500"
                         onClick={() =>
                           item.key !== "action" && requestSortMain(item.key)
                         }
@@ -361,42 +361,42 @@ export default function Karyawan() {
                 <tbody className="text-xs md:text-sm lg:text-base">
                   {currentItemsMain.map((item, index) => (
                     <tr key={item.id}>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-200">
                         {indexOfFirstItemMain + index + 1}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.Nama_depan} {item.Nama_belakang}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.divisi.Nama}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.role.name}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.email}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.Email_Sistem}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.Tanggal_Mulai_Bekerja}
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.Kuota_Cuti} Hari
                       </td>
-                      <td className="border border-gray-300 px-4 py-2">
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-100">
                         {item.Kuota_Izin} jam
                       </td>
                       <td className=" border-gray-300 px-4 py-2 flex justify-center gap-4">
                         <button
-                          className="bg-blue-500 text-white px-4 py-2 rounded"
+                          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300"
                           onClick={() => handleOpen(item)}
                         >
                           Edit
                         </button>
                         <button
-                          className="bg-red-500 text-white px-4 py-2 rounded"
+                          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-300"
                           onClick={() => {
                             setSelectedId(item.id);
                             handleModalHapus();

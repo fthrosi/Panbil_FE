@@ -110,12 +110,12 @@ export default function FormPengajuanIzin() {
         </div>
         <div className="w-full flex justify-end gap-3">
           <button
-            className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base"
+            className="bg-[rgb(16,185,129)] lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base hover:bg-green-200"
             type="submit"
           >
             Simpan
           </button>
-          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base" onClick={navigate('/pengajuan')}>
+          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base hover:bg-red-200" onClick={() => navigate('/pengajuan')}>
             Batal
           </button>
         </div>

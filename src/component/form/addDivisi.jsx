@@ -53,7 +53,7 @@ export default function FormAddDivisi() {
           >
             Simpan
           </button>
-          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base" onClick={navigate('/divisi')}>
+          <button className=" bg-red-500 lg:py-1 lg:px-4 py-1 px-2 rounded-md lg:rounded-lg mt-5 nunito text-white text-xs md:text-sm lg:text-base" onClick={() => navigate('/divisi')} type="button">
             Batal
           </button>
         </div>

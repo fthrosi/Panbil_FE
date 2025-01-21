@@ -194,7 +194,7 @@ export default function Divisi() {
         <div className="mt-5">
           <Link
             to={"/adddivisi"}
-            className="p-2 bg-blue-600 rounded-md text-white font-semibold"
+            className="p-2 bg-blue-600 rounded-md text-white font-semibold hover:bg-blue-200"
           >
             Tambah Divisi
           </Link>
@@ -237,13 +237,13 @@ export default function Divisi() {
                   </td>
                   <td className="border border-gray-300 px-4 py-2 flex justify-center gap-4">
                     <button
-                      className="bg-blue-500 text-white px-4 py-2 rounded"
+                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-200"
                       onClick={() => handleOpen(item)}
                     >
                       Edit
                     </button>
                     <button
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-200"
                       onClick={() => {
                         setSelectedId(item.id);
                         handleModalHapus();
