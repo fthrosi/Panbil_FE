@@ -10,33 +10,75 @@ export const handlePrint = (type, data) => {
       <head>
         <title>Cetak ${type === "cuti" ? "Cuti" : "Izin"}</title>
         <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
           body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Roboto', Arial, sans-serif;
+            padding: 40px;
+            color: #333;
           }
+
           .header {
             text-align: center;
             margin-bottom: 30px;
           }
+
+          .header h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+          }
+
+          .header::after {
+            content: "";
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            border-bottom: 3px solid #007BFF;
+            margin-top: 10px;
+          }
+
           .content {
             margin-bottom: 20px;
           }
+
           table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           }
+
           td {
-            padding: 8px;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
           }
+
+          td:first-child {
+            font-weight: bold;
+            background-color: #f8f9fa;
+            width: 30%;
+          }
+
           .signature {
             margin-top: 50px;
             display: flex;
             justify-content: space-between;
           }
+
           .signature-box {
             text-align: center;
             width: 200px;
+            padding: 10px;
+          }
+
+          .signature-box p {
+            margin: 0;
+          }
+
+          .signature-box p:first-child {
+            font-weight: bold;
+            margin-bottom: 60px;
           }
         </style>
       </head>
@@ -48,9 +90,7 @@ export const handlePrint = (type, data) => {
           <table>
             <tr>
               <td>Nama</td>
-              <td>: ${data.karyawan.Nama_depan} ${
-    data.karyawan.Nama_belakang
-  }</td>
+              <td>: ${data.karyawan.Nama_depan} ${data.karyawan.Nama_belakang}</td>
             </tr>
             <tr>
               <td>Divisi</td>
